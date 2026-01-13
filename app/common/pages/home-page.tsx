@@ -1,9 +1,16 @@
-import { Button } from "~/common/components/ui/button";
+import type { MetaFunction } from "react-router";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Home | roasted garlic" },
+    { name: "description", content: "Welcome to roasted garlic." },
+  ];
+};
 
 export default function Home() {
   return (
-    <h1 className="text-5xl">
-      homepage <Button className="max-w-xl">roasted garlic.</Button>
-    </h1>
+    <div className="px-20 pt-24 space-y-40">
+      <h1 className="text-5xl font-bold leading-tight tracking-tight">home</h1>
+    </div>
   );
 }
