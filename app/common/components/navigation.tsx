@@ -35,7 +35,7 @@ const menus = [
 
 export default function Navigation() {
   return (
-    <nav className="flex h-16 items-center justify-between px-20 fixed top-0 left-0 right-0 z-50 backdrop-blur bg-background/50">
+    <nav className="flex h-12 items-center justify-between px-6 fixed top-4 left-1/2 -translate-x-1/2 z-50 backdrop-blur-md bg-background/70 shadow-sm border border-border/50 rounded-full">
       <div className="flex items-center">
         {/* Brand */}
         <Link to="/" className="font-bold tracking-tighter text-lg">

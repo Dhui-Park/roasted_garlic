@@ -97,6 +97,20 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-amber-200 text-foreground;
   }
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(var(--marquee-distance, -50%));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
 }
